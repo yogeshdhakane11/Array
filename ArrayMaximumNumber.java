@@ -2,29 +2,28 @@ package Array;
 
 import java.util.Scanner;
 
-public class ArrayMinimumNumber {
+public class ArrayMaximumNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("How much size array create : ");
+        System.out.println("Enter array size : ");
         int size = sc.nextInt();
 
-        // create number array
+        // create array
         int []number = new int[size];
 
-        // enter element array
+        // add element array
         for (int i = 0; i < number.length; i++) {
             System.out.println("Enter element array : ");
             number[i] = sc.nextInt();
         }
 
-        // miminum element array
-        int min = number[0];
+        // max element find
+        int max = number[0];
         for (int i = 0; i < number.length; i++) {
-            if (number[i] < min)
-            {
-                min = number[i];
+            if (max < number[i]){
+                max = number[i];
             }
         }
-        System.out.println("Minimum element is : " + min);
+        System.out.println("Maximum element array : " + max);
     }
 }
