@@ -39,7 +39,7 @@ public class ArrayRemoveDuplicate {
         for (int num: set){
             uniqueArr[index++] = num;
         }
-        //
+        // print element
         System.out.println(Arrays.toString(uniqueArr));
     }
 }
